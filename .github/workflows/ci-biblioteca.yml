@@ -58,7 +58,7 @@ jobs:
   deploy-dev:
     name: Deploy em Desenvolvimento
     runs-on: ubuntu-latest
-    needs: docker
+    needs: build-and-push-docker
     environment:
       name: development
       url: https://development.biblioteca-pessoal.com
